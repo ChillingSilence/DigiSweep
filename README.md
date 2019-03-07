@@ -1,6 +1,6 @@
 # DigiSweep
 ## Simple DigiByte Recovery Tool
-Live runable version available at:  https://mctrivia.github.io/DigiSweep/index.html
+Live runable version available at:  https://digisweep.digibyteservers.io
 
 ### Able to recover funds from:
 - Funds accidently sent to Doge,Digitalcoin,Verge,Unobtanium,PIVX,Denarius, and Defcoin addresses if private key is known
@@ -12,10 +12,6 @@ Live runable version available at:  https://mctrivia.github.io/DigiSweep/index.h
 
 ### Able to send funds to 1 or more DigiByte Legacy Addresses(addresses starting with D)
 
-
-# Contribution:
-## Pull request welcomed(please comment thoroughly)
-
 ### Key Files:
 - config.js - List of app configurations, and DigiID setups to check
 - main.js - Main site code
@@ -24,5 +20,6 @@ Live runable version available at:  https://mctrivia.github.io/DigiSweep/index.h
 - digiid.html - tool to calculate DigiID derivative paths
 
 
-
-# Donations: D9RVKBjzRvnzUUTHxZBNZ3kfAHrmci1v76
+## Donations:
+You can donate to the original author https://github.com/mctrivia using:
+D9RVKBjzRvnzUUTHxZBNZ3kfAHrmci1v76
