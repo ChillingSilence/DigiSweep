@@ -17,7 +17,7 @@
 <div id="pageIntro" class="page">
 	<img id="logo" src="logo.svg"><br>
 	Please note that your private keys never leave your machine or get saved anywhere.<br>
-	That said we recomend you read over the code <a href="https://github.com/mctrivia/DigiSweep">on GitHub</a> and verify this page is being hosted by GitHub<br><br>
+	That said we recomend you read over the code <a href="https://github.com/DigiByte-Core/DigiSweep">on GitHub</a> and you can always run a copy of this locally on your own PC.<br><br>
 	<input type="button" page="pageKeys" class="next" value="Next">
 </div>
 <div id="pageKeys" class="page">
@@ -31,31 +31,31 @@
 	<br>&nbsp;<br>
 	Server: <select id="server">
 		<option value="https://digiexplorer.info/api/" selected>Main(DigiExplorer.info)</option>
-		<option value="https://explorer.digibyteprojects.com/api/">Backup 1(digibyteprojects.com)</option>
+		<option value="https://explorer-1.us.digibyteservers.io/api/">Backup 1(explorer-1.us.digibyteservers.io)</option>
 	</select><br>
 	<input type="button" page="pageBalances" class="next" value="Find my funds">
 </div>
 <div id="pageBalances" class="page">
 	<h1>Step 2: Verify Balance</h1>
-	On the next page we will get where to send the funds to.  For now please verify we have found all the funds you are trying to recover.<br>
+	On the next page we will get where to send the funds to. For now please verify we have found all the funds you are trying to recover.<br>
 	<div id="balanceTable"></div>
 	<div id="balanceTotals">Total DGB Found: <span id="balanceTotal"></span> DGB</div>
 	<input id="export" type="button" value="Export Keys(not recommended) - Safer to click Next below"><br>
 	<h3>Please verify this is expected value</h3>
-	<br><input type="button" page="pageKeys" class="back" value="Add more wallets"><input type="button" page="pageRecipients" class="next" value="Set where to send">
+	<br><input type="button" page="pageKeys" class="back" value="Add more wallets"><input type="button" page="pageRecipients" class="next" value="Set address to send recovered DigiByte to">
 </div>
 <div id="pageRecipients" class="page">
 	<h1>Step 3: Recipients</h1>
 	<h3>Pick up to 100 addresses to send the <span id="recipientTotal"></span> DGB to</h3>
-	<b>If you need a reliable wallet to send your DigiByte to I recomend <a href="https://www.coinomi.com/downloads/" target="_blank">Coinomi</a>.</b><br>
-	Recipient Address(Must start with S or D): <input type="text" id="recipientsNew"><input type="button" id="recipientsAdd" value="Add"><br>
+	<b>If you need a DigiByte wallet to send your DigiByte to, you can check out <a href="https://digibytewallets.com/" target="_blank">DigiByteWallets.com</a> or <a href="https://digibyte.io/digibyte-wallet-downloads" target="_blank">DigiByte.io</a>.</b><br>
+	Enter your new Address(Must start with S or D) to send your recovered DigiByte to: <input type="text" id="recipientsNew"><input type="button" id="recipientsAdd" value="Add"><br>
 	<div id="recipientsTable"></div>
 	<br><input type="button" page="pageBalances" class="back" value="Back"><input id="pageRecipientsNext" type="button" page="pageSent" class="next" value="Send" disabled>
 </div>
 <div id="pageSent" class="page">
 	<h1>Thanks for using DigiSweep</h1><br>
 	txid: <span id="sentTXID"></span><br>&nbsp;<br>
-	Donation Address:<br>
+	Donation Address for <a href="https://github.com/mctrivia/DigiSweep">mctrivia</a>, DigiSweep author:<br>
 	<img class="DigiQR" uri="D9RVKBjzRvnzUUTHxZBNZ3kfAHrmci1v76"><br>
 	D9RVKBjzRvnzUUTHxZBNZ3kfAHrmci1v76
 </div>
@@ -112,7 +112,7 @@ only signatures proving you know them.
 </div>
 <div id="window_unspendable" class="window">
 <h1>Unspendable Coins Found</h1>
-<p><span id="unspendableQuantity"></span> DGB was in UTXO that can not yet be spent.  To send that part of the balance you will have to try again later.  The rest can be sent now.</p>
+<p><span id="unspendableQuantity"></span> DGB was in UTXO that can not yet be spent. To send that part of the balance you will have to try again later. The rest can be sent now.</p>
 <input type="button" class="close" value="OK">
 </div>
 
